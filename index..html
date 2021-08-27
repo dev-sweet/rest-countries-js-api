@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        #countries-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap:20px;
+        }
+        .country {
+            text-align: center;
+            padding: 20px;
+            background: beige;
+            border:1px solid orange;
+            border-radius: 5px;
+            color:#ff6600
+    }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <section class="py-5">
+            <input id="search-box" class="form-control w-25 d-inline" type="text" placeholder="Search Coutry">
+            <button class="btn btn-warning mb-1" onclick="searchCountries()">Search</button>
+            <h1>Countries</h1>
+        </section>
+        <section id="countries-container">
+    
+        </section>
+    
+    </div>
+    <script src="countries.js"></script>
+</body>
+</html>
